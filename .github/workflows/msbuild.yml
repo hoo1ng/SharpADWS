@@ -45,7 +45,7 @@ jobs:
 
     - name: Package
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: Compress-Archive -Path .\bin -Destination bin.zip
+      run: Compress-Archive -Path bin\Release -Destination bin.zip
 
     - name: Release
       uses: softprops/action-gh-release@v1
